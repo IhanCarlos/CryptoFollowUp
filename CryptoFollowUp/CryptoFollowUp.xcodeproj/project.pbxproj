@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */; };
+		1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD62FA687C700313A00 /* ContentView.swift */; };
+		1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AECD82FA687C900313A00 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1E3AECDF2FA687CA00313A00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,16 +31,14 @@
 
 /* Begin PBXFileReference section */
 		1E3AECD12FA687C700313A00 /* CryptoFollowUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoFollowUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoFollowUpApp.swift; sourceTree = "<group>"; };
+		1E3AECD62FA687C700313A00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E3AECD82FA687C900313A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E3AECDE2FA687CA00313A00 /* CryptoFollowUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3AECE82FA687CA00313A00 /* CryptoFollowUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1E3AECD32FA687C700313A00 /* CryptoFollowUp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CryptoFollowUp;
-			sourceTree = "<group>";
-		};
 		1E3AECE12FA687CA00313A00 /* CryptoFollowUpTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CryptoFollowUpTests;
@@ -75,7 +79,7 @@
 		1E3AECC82FA687C700313A00 = {
 			isa = PBXGroup;
 			children = (
-				1E3AECD32FA687C700313A00 /* CryptoFollowUp */,
+				1E3AECFB2FA68AF000313A00 /* CryptoFollowUp */,
 				1E3AECE12FA687CA00313A00 /* CryptoFollowUpTests */,
 				1E3AECEB2FA687CA00313A00 /* CryptoFollowUpUITests */,
 				1E3AECD22FA687C700313A00 /* Products */,
@@ -92,6 +96,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1E3AECFB2FA68AF000313A00 /* CryptoFollowUp */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AECD82FA687C900313A00 /* Assets.xcassets */,
+				1E3AECD62FA687C700313A00 /* ContentView.swift */,
+				1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */,
+			);
+			path = CryptoFollowUp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +120,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				1E3AECD32FA687C700313A00 /* CryptoFollowUp */,
 			);
 			name = CryptoFollowUp;
 			packageProductDependencies = (
@@ -212,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */,
+				1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
