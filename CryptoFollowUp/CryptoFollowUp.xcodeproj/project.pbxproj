@@ -10,6 +10,9 @@
 		1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */; };
 		1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD62FA687C700313A00 /* ContentView.swift */; };
 		1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AECD82FA687C900313A00 /* Assets.xcassets */; };
+		D97416862FA68C0400C24C74 /* DexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97416852FA68BF800C24C74 /* DexModels.swift */; };
+		A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */; };
+		A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022FA6900100313A00 /* DexScreenerClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		1E3AECD82FA687C900313A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E3AECDE2FA687CA00313A00 /* CryptoFollowUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3AECE82FA687CA00313A00 /* CryptoFollowUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97416852FA68BF800C24C74 /* DexModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexModels.swift; sourceTree = "<group>"; };
+		A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBoostsViewModel.swift; sourceTree = "<group>"; };
+		A10000022FA6900100313A00 /* DexScreenerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexScreenerClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -99,11 +105,46 @@
 		1E3AECFB2FA68AF000313A00 /* CryptoFollowUp */ = {
 			isa = PBXGroup;
 			children = (
+				D97416842FA68BEB00C24C74 /* Models */,
+				A10000062FA6900100313A00 /* Services */,
+				A10000052FA6900100313A00 /* ViewModels */,
+				A10000072FA6900100313A00 /* Views */,
 				1E3AECD82FA687C900313A00 /* Assets.xcassets */,
-				1E3AECD62FA687C700313A00 /* ContentView.swift */,
 				1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */,
 			);
 			path = CryptoFollowUp;
+			sourceTree = "<group>";
+		};
+		D97416842FA68BEB00C24C74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D97416852FA68BF800C24C74 /* DexModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000052FA6900100313A00 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A10000062FA6900100313A00 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000022FA6900100313A00 /* DexScreenerClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A10000072FA6900100313A00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AECD62FA687C700313A00 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +291,9 @@
 			files = (
 				1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */,
 				1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */,
+				D97416862FA68C0400C24C74 /* DexModels.swift in Sources */,
+				A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */,
+				A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

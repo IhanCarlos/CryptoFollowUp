@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CryptoFollowUpApp: App {
+    @StateObject private var tokenBoostsViewModel = TokenBoostsViewModel(tokenBoosts: DexScreenerClient.shared)
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: tokenBoostsViewModel)
         }
     }
 }
