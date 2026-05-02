@@ -10,10 +10,22 @@ import SwiftUI
 @main
 struct CryptoFollowUpApp: App {
     @StateObject private var tokenBoostsViewModel = TokenBoostsViewModel(tokenBoosts: DexScreenerClient.shared)
+    @StateObject private var swapViewModel = SwapViewModel(client: DexScreenerClient.shared)
 
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: tokenBoostsViewModel)
+            TabView {
+                ContentView(viewModel: tokenBoostsViewModel)
+                    .tabItem {
+                        Label("Boosts", systemImage: "flame.fill")
+                    }
+
+                SwapScreenView(viewModel: swapViewModel)
+                    .tabItem {
+                        Label("Swap", systemImage: "arrow.left.arrow.right")
+                    }
+            }
+            .tint(AppColor.accent)
         }
     }
 }

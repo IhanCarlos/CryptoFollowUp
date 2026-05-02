@@ -11,13 +11,18 @@
 		1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD62FA687C700313A00 /* ContentView.swift */; };
 		1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AECD82FA687C900313A00 /* Assets.xcassets */; };
 		A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */; };
+		B2VM00012FA6950000313A00 /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2VM00002FA6950000313A00 /* SwapViewModel.swift */; };
 		A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022FA6900100313A00 /* DexScreenerClient.swift */; };
 		D97416862FA68C0400C24C74 /* DexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97416852FA68BF800C24C74 /* DexModels.swift */; };
+		B2PI00022FA6960000313A00 /* SwapPairInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2PI00012FA6960000313A00 /* SwapPairInsights.swift */; };
 		B2DS00062FA6910000313A00 /* AppSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00012FA6910000313A00 /* AppSpacing.swift */; };
 		B2DS00072FA6910000313A00 /* AppRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00022FA6910000313A00 /* AppRadius.swift */; };
 		B2DS00082FA6910000313A00 /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00032FA6910000313A00 /* AppTypography.swift */; };
 		B2DS00092FA6910000313A00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00042FA6910000313A00 /* AppColors.swift */; };
 		B2DSA0A02FA6910000313A00 /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00052FA6910000313A00 /* AppCard.swift */; };
+		B2TI00022FA6920000313A00 /* TokenIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2TI00012FA6920000313A00 /* TokenIconView.swift */; };
+		B2SW00012FA6930000313A00 /* SwapCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2SW00002FA6930000313A00 /* SwapCardView.swift */; };
+		B2SW00032FA6940000313A00 /* SwapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2SW00022FA6940000313A00 /* SwapScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +50,18 @@
 		1E3AECDE2FA687CA00313A00 /* CryptoFollowUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3AECE82FA687CA00313A00 /* CryptoFollowUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBoostsViewModel.swift; sourceTree = "<group>"; };
+		B2VM00002FA6950000313A00 /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
 		A10000022FA6900100313A00 /* DexScreenerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexScreenerClient.swift; sourceTree = "<group>"; };
 		D97416852FA68BF800C24C74 /* DexModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexModels.swift; sourceTree = "<group>"; };
+		B2PI00012FA6960000313A00 /* SwapPairInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPairInsights.swift; sourceTree = "<group>"; };
 		B2DS00012FA6910000313A00 /* AppSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpacing.swift; sourceTree = "<group>"; };
 		B2DS00022FA6910000313A00 /* AppRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRadius.swift; sourceTree = "<group>"; };
 		B2DS00032FA6910000313A00 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
 		B2DS00042FA6910000313A00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B2DS00052FA6910000313A00 /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
+		B2TI00012FA6920000313A00 /* TokenIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenIconView.swift; sourceTree = "<group>"; };
+		B2SW00002FA6930000313A00 /* SwapCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCardView.swift; sourceTree = "<group>"; };
+		B2SW00022FA6940000313A00 /* SwapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -142,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */,
+				B2VM00002FA6950000313A00 /* SwapViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -158,6 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				1E3AECD62FA687C700313A00 /* ContentView.swift */,
+				B2SW00002FA6930000313A00 /* SwapCardView.swift */,
+				B2SW00022FA6940000313A00 /* SwapScreenView.swift */,
+				B2TI00012FA6920000313A00 /* TokenIconView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D97416852FA68BF800C24C74 /* DexModels.swift */,
+				B2PI00012FA6960000313A00 /* SwapPairInsights.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,10 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */,
+				B2TI00022FA6920000313A00 /* TokenIconView.swift in Sources */,
+				B2SW00012FA6930000313A00 /* SwapCardView.swift in Sources */,
+				B2SW00032FA6940000313A00 /* SwapScreenView.swift in Sources */,
 				1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */,
 				D97416862FA68C0400C24C74 /* DexModels.swift in Sources */,
+				B2PI00022FA6960000313A00 /* SwapPairInsights.swift in Sources */,
 				A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */,
 				A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */,
+				B2VM00012FA6950000313A00 /* SwapViewModel.swift in Sources */,
 				B2DS00062FA6910000313A00 /* AppSpacing.swift in Sources */,
 				B2DS00072FA6910000313A00 /* AppRadius.swift in Sources */,
 				B2DS00082FA6910000313A00 /* AppTypography.swift in Sources */,

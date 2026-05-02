@@ -40,7 +40,7 @@ actor PreviewTokenBoostsProvider: TokenBoostsProviding {
                 chainID: .solana,
                 tokenAddress: "So11111111111111111111111111111111111111112",
                 description: "Preview",
-                icon: nil,
+                icon: "zCdk2o2rkqr1zULB",
                 header: nil,
                 openGraph: nil,
                 totalAmount: 20,

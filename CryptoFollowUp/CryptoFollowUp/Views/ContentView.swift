@@ -25,17 +25,20 @@ struct ContentView: View {
                     .foregroundStyle(AppColor.secondaryLabel)
                 } else {
                     List(viewModel.boosts, id: \.self) { item in
-                        VStack(alignment: .leading, spacing: AppSpacing.xs) {
-                            Text(item.tokenAddress)
-                                .font(AppTypography.captionMono)
-                                .foregroundStyle(AppColor.primaryLabel)
-                                .lineLimit(1)
-                            Text(item.description ?? "—")
-                                .font(AppTypography.subheadline)
-                                .foregroundStyle(AppColor.primaryLabel)
-                            Text(item.chainID.rawValue)
-                                .font(AppTypography.caption2)
-                                .foregroundStyle(AppColor.tertiaryLabel)
+                        HStack(alignment: .center, spacing: AppSpacing.sm) {
+                            TokenIconView(url: item.tokenIconURL)
+                            VStack(alignment: .leading, spacing: AppSpacing.xs) {
+                                Text(item.tokenAddress)
+                                    .font(AppTypography.captionMono)
+                                    .foregroundStyle(AppColor.primaryLabel)
+                                    .lineLimit(1)
+                                Text(item.description ?? "—")
+                                    .font(AppTypography.subheadline)
+                                    .foregroundStyle(AppColor.primaryLabel)
+                                Text(item.chainID.rawValue)
+                                    .font(AppTypography.caption2)
+                                    .foregroundStyle(AppColor.tertiaryLabel)
+                            }
                         }
                         .padding(.vertical, AppSpacing.xs)
                         .listRowBackground(AppColor.surface)

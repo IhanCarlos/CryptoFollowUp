@@ -265,3 +265,22 @@ struct DexMetaDetail: Codable, Hashable, Sendable {
     var marketCapDelta: DexMetaTimeframeStats
     var pairs: [DexPair]
 }
+
+enum DexMedia {
+    static func tokenIconURL(from raw: String?) -> URL? {
+        guard let raw = raw?.trimmingCharacters(in: .whitespacesAndNewlines), !raw.isEmpty else { return nil }
+        if raw.hasPrefix("http://") || raw.hasPrefix("https://") {
+            return URL(string: raw)
+        }
+        let encoded = raw.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? raw
+        return URL(string: "https://cdn.dexscreener.com/cms/images/\(encoded)?width=128&height=128&fit=crop&quality=95&format=auto")
+    }
+}
+
+extension WelcomeElement {
+    var tokenIconURL: URL? { DexMedia.tokenIconURL(from: icon) }
+}
+
+extension DexTokenProfile {
+    var tokenIconURL: URL? { DexMedia.tokenIconURL(from: icon) }
+}
