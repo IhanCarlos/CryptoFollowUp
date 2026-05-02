@@ -205,6 +205,8 @@ private struct SwapDetailsSection: View {
 }
 
 private struct SwapPairInsightsCard: View {
+    @Environment(\.openURL) private var openURL
+
     let insights: SwapPairInsights
 
     private var rows: [String] {
@@ -236,19 +238,31 @@ private struct SwapPairInsightsCard: View {
                 .foregroundStyle(AppColor.secondaryLabel)
 
             if let u = insights.pairURL {
-                Link(destination: u) {
-                    Label("Abrir par no DexScreener", systemImage: "safari")
-                        .font(AppTypography.callout.weight(.semibold))
-                        .foregroundStyle(AppColor.accent)
+                Button {
+                    openURL(u)
+                } label: {
+                    HStack(spacing: AppSpacing.xs) {
+                        Image(systemName: "safari")
+                        Text("Abrir par no DexScreener")
+                    }
+                    .font(AppTypography.callout.weight(.semibold))
+                    .foregroundStyle(AppColor.accent)
                 }
+                .buttonStyle(.plain)
             }
 
             if let w = insights.primaryWebsite {
-                Link(destination: w) {
-                    Label("Website (token info)", systemImage: "link")
-                        .font(AppTypography.caption)
-                        .foregroundStyle(AppColor.accent)
+                Button {
+                    openURL(w)
+                } label: {
+                    HStack(spacing: AppSpacing.xs) {
+                        Image(systemName: "link")
+                        Text("Website (token info)")
+                    }
+                    .font(AppTypography.caption)
+                    .foregroundStyle(AppColor.accent)
                 }
+                .buttonStyle(.plain)
             }
 
             Divider()
@@ -339,14 +353,16 @@ private struct SlideToSwapBar: View {
         Circle()
             .fill(
                 AngularGradient(
-                    colors: [
+                    gradient: Gradient(colors: [
                         Color(red: 0.5, green: 0.9, blue: 1),
                         Color(red: 0.7, green: 0.5, blue: 1),
                         Color(red: 1, green: 0.6, blue: 0.8),
                         Color(red: 0.4, green: 0.95, blue: 0.9),
                         Color(red: 0.5, green: 0.9, blue: 1),
-                    ],
-                    center: .center
+                    ]),
+                    center: .center,
+                    startAngle: .degrees(0),
+                    endAngle: .degrees(360)
                 )
             )
             .frame(width: thumbSize, height: thumbSize)
