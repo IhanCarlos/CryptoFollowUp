@@ -6,26 +6,31 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct CryptoFollowUpApp: App {
+    
+    @StateObject private var session = SessionManager()
+    
     @StateObject private var tokenBoostsViewModel = TokenBoostsViewModel(tokenBoosts: DexScreenerClient.shared)
     @StateObject private var swapViewModel = SwapViewModel(client: DexScreenerClient.shared)
 
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ContentView(viewModel: tokenBoostsViewModel)
-                    .tabItem {
-                        Label("Boosts", systemImage: "flame.fill")
-                    }
-
-                SwapScreenView(viewModel: swapViewModel)
-                    .tabItem {
-                        Label("Swap", systemImage: "arrow.left.arrow.right")
-                    }
+            
+            if session.isLogged {
+//                MainTabView(
+//                    tokenBoostsViewModel: tokenBoostsViewModel,
+//                    swapViewModel: swapViewModel
+//                )
+            } else {
+                LoginView()
             }
-            .tint(AppColor.accent)
         }
     }
 }

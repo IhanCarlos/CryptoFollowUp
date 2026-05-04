@@ -10,19 +10,27 @@
 		1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */; };
 		1E3AECD72FA687C700313A00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AECD62FA687C700313A00 /* ContentView.swift */; };
 		1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AECD82FA687C900313A00 /* Assets.xcassets */; };
+		1E3AED122FA90B2400313A00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3AED112FA90B2400313A00 /* GoogleService-Info.plist */; };
+		1E3AED162FA90CDF00313A00 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1E3AED152FA90CDF00313A00 /* FirebaseAuth */; };
+		1E3AED182FA90CE600313A00 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1E3AED172FA90CE600313A00 /* FirebaseFirestore */; };
+		1E3AED1C2FA90F0600313A00 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AED1B2FA90F0600313A00 /* LoginView.swift */; };
+		1E3AED1F2FA913E200313A00 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AED1E2FA913E200313A00 /* TextFieldView.swift */; };
+		1E3AED232FA9161C00313A00 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AED222FA9161500313A00 /* LoginViewModel.swift */; };
+		1E3AED262FA916B100313A00 /* AlthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AED252FA916A500313A00 /* AlthService.swift */; };
+		1E3AED2C2FA91F0300313A00 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3AED2B2FA91F0300313A00 /* SessionManager.swift */; };
 		A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */; };
-		B2VM00012FA6950000313A00 /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2VM00002FA6950000313A00 /* SwapViewModel.swift */; };
 		A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000022FA6900100313A00 /* DexScreenerClient.swift */; };
-		D97416862FA68C0400C24C74 /* DexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97416852FA68BF800C24C74 /* DexModels.swift */; };
-		B2PI00022FA6960000313A00 /* SwapPairInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2PI00012FA6960000313A00 /* SwapPairInsights.swift */; };
 		B2DS00062FA6910000313A00 /* AppSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00012FA6910000313A00 /* AppSpacing.swift */; };
 		B2DS00072FA6910000313A00 /* AppRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00022FA6910000313A00 /* AppRadius.swift */; };
 		B2DS00082FA6910000313A00 /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00032FA6910000313A00 /* AppTypography.swift */; };
 		B2DS00092FA6910000313A00 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00042FA6910000313A00 /* AppColors.swift */; };
 		B2DSA0A02FA6910000313A00 /* AppCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DS00052FA6910000313A00 /* AppCard.swift */; };
-		B2TI00022FA6920000313A00 /* TokenIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2TI00012FA6920000313A00 /* TokenIconView.swift */; };
+		B2PI00022FA6960000313A00 /* SwapPairInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2PI00012FA6960000313A00 /* SwapPairInsights.swift */; };
 		B2SW00012FA6930000313A00 /* SwapCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2SW00002FA6930000313A00 /* SwapCardView.swift */; };
 		B2SW00032FA6940000313A00 /* SwapScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2SW00022FA6940000313A00 /* SwapScreenView.swift */; };
+		B2TI00022FA6920000313A00 /* TokenIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2TI00012FA6920000313A00 /* TokenIconView.swift */; };
+		B2VM00012FA6950000313A00 /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2VM00002FA6950000313A00 /* SwapViewModel.swift */; };
+		D97416862FA68C0400C24C74 /* DexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97416852FA68BF800C24C74 /* DexModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +57,25 @@
 		1E3AECD82FA687C900313A00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E3AECDE2FA687CA00313A00 /* CryptoFollowUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3AECE82FA687CA00313A00 /* CryptoFollowUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoFollowUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3AED112FA90B2400313A00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E3AED1B2FA90F0600313A00 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1E3AED1E2FA913E200313A00 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		1E3AED222FA9161500313A00 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1E3AED252FA916A500313A00 /* AlthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlthService.swift; sourceTree = "<group>"; };
+		1E3AED2B2FA91F0300313A00 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		A10000012FA6900100313A00 /* TokenBoostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenBoostsViewModel.swift; sourceTree = "<group>"; };
-		B2VM00002FA6950000313A00 /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
 		A10000022FA6900100313A00 /* DexScreenerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexScreenerClient.swift; sourceTree = "<group>"; };
-		D97416852FA68BF800C24C74 /* DexModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexModels.swift; sourceTree = "<group>"; };
-		B2PI00012FA6960000313A00 /* SwapPairInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPairInsights.swift; sourceTree = "<group>"; };
 		B2DS00012FA6910000313A00 /* AppSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSpacing.swift; sourceTree = "<group>"; };
 		B2DS00022FA6910000313A00 /* AppRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRadius.swift; sourceTree = "<group>"; };
 		B2DS00032FA6910000313A00 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
 		B2DS00042FA6910000313A00 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B2DS00052FA6910000313A00 /* AppCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCard.swift; sourceTree = "<group>"; };
-		B2TI00012FA6920000313A00 /* TokenIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenIconView.swift; sourceTree = "<group>"; };
+		B2PI00012FA6960000313A00 /* SwapPairInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPairInsights.swift; sourceTree = "<group>"; };
 		B2SW00002FA6930000313A00 /* SwapCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCardView.swift; sourceTree = "<group>"; };
 		B2SW00022FA6940000313A00 /* SwapScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapScreenView.swift; sourceTree = "<group>"; };
+		B2TI00012FA6920000313A00 /* TokenIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenIconView.swift; sourceTree = "<group>"; };
+		B2VM00002FA6950000313A00 /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
+		D97416852FA68BF800C24C74 /* DexModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DexModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -82,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3AED162FA90CDF00313A00 /* FirebaseAuth in Frameworks */,
+				1E3AED182FA90CE600313A00 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +124,7 @@
 				1E3AECFB2FA68AF000313A00 /* CryptoFollowUp */,
 				1E3AECE12FA687CA00313A00 /* CryptoFollowUpTests */,
 				1E3AECEB2FA687CA00313A00 /* CryptoFollowUpUITests */,
+				1E3AED142FA90CDF00313A00 /* Frameworks */,
 				1E3AECD22FA687C700313A00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,21 +148,80 @@
 				A10000052FA6900100313A00 /* ViewModels */,
 				A10000072FA6900100313A00 /* Views */,
 				1E3AECD82FA687C900313A00 /* Assets.xcassets */,
+				1E3AED112FA90B2400313A00 /* GoogleService-Info.plist */,
 				1E3AECD42FA687C700313A00 /* CryptoFollowUpApp.swift */,
+				1E3AED2B2FA91F0300313A00 /* SessionManager.swift */,
 			);
 			path = CryptoFollowUp;
 			sourceTree = "<group>";
 		};
-		B2DSA0B02FA6910000313A00 /* DesignSystem */ = {
+		1E3AED0E2FA8FEA900313A00 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B2DS00012FA6910000313A00 /* AppSpacing.swift */,
-				B2DS00022FA6910000313A00 /* AppRadius.swift */,
-				B2DS00032FA6910000313A00 /* AppTypography.swift */,
-				B2DS00042FA6910000313A00 /* AppColors.swift */,
-				B2DS00052FA6910000313A00 /* AppCard.swift */,
 			);
-			path = DesignSystem;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1E3AED142FA90CDF00313A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E3AED192FA90D7300313A00 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED242FA9169C00313A00 /* AlthManager */,
+				1E3AED212FA9160500313A00 /* ViewModel */,
+				1E3AED202FA9160000313A00 /* View */,
+				1E3AED1D2FA913B700313A00 /* Components */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1E3AED1A2FA90D7A00313A00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED0E2FA8FEA900313A00 /* Components */,
+				1E3AECD62FA687C700313A00 /* ContentView.swift */,
+				B2SW00002FA6930000313A00 /* SwapCardView.swift */,
+				B2SW00022FA6940000313A00 /* SwapScreenView.swift */,
+				B2TI00012FA6920000313A00 /* TokenIconView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1E3AED1D2FA913B700313A00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED1E2FA913E200313A00 /* TextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1E3AED202FA9160000313A00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED1B2FA90F0600313A00 /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E3AED212FA9160500313A00 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED222FA9161500313A00 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E3AED242FA9169C00313A00 /* AlthManager */ = {
+			isa = PBXGroup;
+			children = (
+				1E3AED252FA916A500313A00 /* AlthService.swift */,
+			);
+			path = AlthManager;
 			sourceTree = "<group>";
 		};
 		A10000052FA6900100313A00 /* ViewModels */ = {
@@ -168,12 +244,22 @@
 		A10000072FA6900100313A00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1E3AECD62FA687C700313A00 /* ContentView.swift */,
-				B2SW00002FA6930000313A00 /* SwapCardView.swift */,
-				B2SW00022FA6940000313A00 /* SwapScreenView.swift */,
-				B2TI00012FA6920000313A00 /* TokenIconView.swift */,
+				1E3AED192FA90D7300313A00 /* Login */,
+				1E3AED1A2FA90D7A00313A00 /* Home */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B2DSA0B02FA6910000313A00 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B2DS00012FA6910000313A00 /* AppSpacing.swift */,
+				B2DS00022FA6910000313A00 /* AppRadius.swift */,
+				B2DS00032FA6910000313A00 /* AppTypography.swift */,
+				B2DS00042FA6910000313A00 /* AppColors.swift */,
+				B2DS00052FA6910000313A00 /* AppCard.swift */,
+			);
+			path = DesignSystem;
 			sourceTree = "<group>";
 		};
 		D97416842FA68BEB00C24C74 /* Models */ = {
@@ -202,6 +288,8 @@
 			);
 			name = CryptoFollowUp;
 			packageProductDependencies = (
+				1E3AED152FA90CDF00313A00 /* FirebaseAuth */,
+				1E3AED172FA90CE600313A00 /* FirebaseFirestore */,
 			);
 			productName = CryptoFollowUp;
 			productReference = 1E3AECD12FA687C700313A00 /* CryptoFollowUp.app */;
@@ -285,6 +373,9 @@
 			);
 			mainGroup = 1E3AECC82FA687C700313A00;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1E3AED132FA90BDC00313A00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1E3AECD22FA687C700313A00 /* Products */;
 			projectDirPath = "";
@@ -303,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E3AECD92FA687C900313A00 /* Assets.xcassets in Resources */,
+				1E3AED122FA90B2400313A00 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +423,12 @@
 				B2TI00022FA6920000313A00 /* TokenIconView.swift in Sources */,
 				B2SW00012FA6930000313A00 /* SwapCardView.swift in Sources */,
 				B2SW00032FA6940000313A00 /* SwapScreenView.swift in Sources */,
+				1E3AED262FA916B100313A00 /* AlthService.swift in Sources */,
+				1E3AED1F2FA913E200313A00 /* TextFieldView.swift in Sources */,
 				1E3AECD52FA687C700313A00 /* CryptoFollowUpApp.swift in Sources */,
 				D97416862FA68C0400C24C74 /* DexModels.swift in Sources */,
 				B2PI00022FA6960000313A00 /* SwapPairInsights.swift in Sources */,
+				1E3AED232FA9161C00313A00 /* LoginViewModel.swift in Sources */,
 				A10000042FA6900100313A00 /* DexScreenerClient.swift in Sources */,
 				A10000032FA6900100313A00 /* TokenBoostsViewModel.swift in Sources */,
 				B2VM00012FA6950000313A00 /* SwapViewModel.swift in Sources */,
@@ -341,6 +436,8 @@
 				B2DS00072FA6910000313A00 /* AppRadius.swift in Sources */,
 				B2DS00082FA6910000313A00 /* AppTypography.swift in Sources */,
 				B2DS00092FA6910000313A00 /* AppColors.swift in Sources */,
+				1E3AED1C2FA90F0600313A00 /* LoginView.swift in Sources */,
+				1E3AED2C2FA91F0300313A00 /* SessionManager.swift in Sources */,
 				B2DSA0A02FA6910000313A00 /* AppCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +773,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E3AED132FA90BDC00313A00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E3AED152FA90CDF00313A00 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E3AED132FA90BDC00313A00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		1E3AED172FA90CE600313A00 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E3AED132FA90BDC00313A00 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E3AECC92FA687C700313A00 /* Project object */;
 }

@@ -6,7 +6,7 @@ struct SwapToken: Equatable {
     var mark: String
     var color: Color
     var iconURL: URL?
-
+    
     init(symbol: String, name: String = "", mark: String, color: Color, iconURL: URL? = nil) {
         self.symbol = symbol
         self.name = name
@@ -14,12 +14,12 @@ struct SwapToken: Equatable {
         self.color = color
         self.iconURL = iconURL
     }
-
+    
     static func == (lhs: SwapToken, rhs: SwapToken) -> Bool {
         lhs.symbol == rhs.symbol
-            && lhs.name == rhs.name
-            && lhs.mark == rhs.mark
-            && lhs.iconURL == rhs.iconURL
+        && lhs.name == rhs.name
+        && lhs.mark == rhs.mark
+        && lhs.iconURL == rhs.iconURL
     }
 }
 
@@ -32,10 +32,10 @@ struct SwapCardView: View {
     let receiveBalance: String
     let payValue: String
     let receiveValue: String
-
+    
     var body: some View {
         ZStack {
-            VStack(spacing: -18) {
+            VStack(spacing: AppSpacing.md) {
                 SwapInputCard(
                     title: "You Pay",
                     token: payToken,
@@ -45,7 +45,7 @@ struct SwapCardView: View {
                     showsMaxButton: true
                 )
                 .shadow(color: Color.black.opacity(0.07), radius: 14, x: 0, y: 6)
-
+                
                 SwapInputCard(
                     title: "You Receive",
                     token: receiveToken,
@@ -56,7 +56,7 @@ struct SwapCardView: View {
                 )
                 .shadow(color: Color.black.opacity(0.07), radius: 14, x: 0, y: 6)
             }
-
+            
             SwapDirectionButton()
         }
         .padding(.vertical, AppSpacing.md)
@@ -70,23 +70,23 @@ private struct SwapInputCard: View {
     let balance: String
     let value: String
     let showsMaxButton: Bool
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.md) {
             HStack(alignment: .top) {
                 Text(title)
                     .font(AppTypography.caption)
                     .foregroundStyle(AppColor.secondaryLabel)
-
-                Spacer()
-
+                
+                    .padding(10)
+                
                 HStack(spacing: AppSpacing.xs) {
                     Image(systemName: "wallet.pass")
                     Text(balance)
                 }
                 .font(AppTypography.caption)
                 .foregroundStyle(AppColor.secondaryLabel)
-
+                
                 if showsMaxButton {
                     Button("Max") {}
                         .buttonStyle(.plain)
@@ -97,11 +97,11 @@ private struct SwapInputCard: View {
                         .background(Color.black, in: Capsule())
                 }
             }
-
+            
             HStack(alignment: .center, spacing: AppSpacing.md) {
                 HStack(spacing: AppSpacing.sm) {
                     TokenBadge(token: token)
-
+                    
                     VStack(alignment: .leading, spacing: 2) {
                         HStack(spacing: AppSpacing.xs) {
                             Text(token.symbol)
@@ -119,15 +119,15 @@ private struct SwapInputCard: View {
                         }
                     }
                 }
-
+                
                 Spacer()
-
+                
                 VStack(alignment: .trailing, spacing: AppSpacing.xs) {
                     Text(amount)
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                         .foregroundStyle(AppColor.primaryLabel)
                         .multilineTextAlignment(.trailing)
-
+                    
                     Text("≈ \(value)")
                         .font(AppTypography.caption)
                         .foregroundStyle(AppColor.secondaryLabel)
@@ -143,7 +143,7 @@ private struct SwapInputCard: View {
 private struct TokenBadge: View {
     let token: SwapToken
     private let badgeSize: CGFloat = 36
-
+    
     var body: some View {
         if token.iconURL != nil {
             TokenIconView(url: token.iconURL, size: badgeSize, circular: true)
@@ -189,7 +189,7 @@ private struct SwapDirectionButton: View {
             endPoint: .bottomTrailing
         )
         .ignoresSafeArea()
-
+        
         SwapCardView(
             payToken: SwapToken(
                 symbol: "BNB",
